@@ -17,7 +17,7 @@ server.get('/', function (req, res) {
   res.json(msg)
 });
 
-//var routes = require('./API/Routes/Routes'); //importing route
+var routes = require('./API/Routes/Routes'); //importing route
 routes(server);
 
 server.listen((process.env.PORT || 8000), function () {
